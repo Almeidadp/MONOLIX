@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img url="index.html" src ="logo.png" alt="Logo Monolix" class="logo">
+        </a>
+        <h1 url="index.html">MONOLIX</h1>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="slide-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="App.html">Monitoreo</a></li>
+                <li><a href="Resultado.html">Resultado</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 id="title_resultado">Resultado da Avaliação</h2>
+
+        <div id="impacto-resultado">
+
+            
+        </div>
+
+        <div id="recomendacoes">
+
+        </div>
+    </div>
+
+    <script>
+        
+        
+        document.addEventListener("DOMContentLoaded", function(){
+
+            var noCount = localStorage.getItem("noCount")
+            var impacto = localStorage.getItem("impacto")
+            var recomendacoes = JSON.parse(localStorage.getItem("recomendacoes"))
+
+            var resultadoDiv = document.getElementById("impacto-resultado")
+
+            var recomendacoesDiv = document.getElementById("recomendacoes")
+
+            if (noCount !== null && impacto !== null) {
+                resultadoDiv.innerHTML = '<p>A area de disposiçao apresenta: <strong>' + impacto +'</strong></p>'
+            }
+
+            if (recomendacoes !== null) {
+                var recomendacoesHTML = recomendacoes.map(function(rec){
+                    return '<p>' + rec + '</p>'
+                }).join("")
+
+
+                recomendacoesDiv.innerHTML = '<h3>Recomendações:</h3>' + recomendacoesHTML
+            }
+        })
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const slideMenu = document.getElementById('slide-menu');
+
+        menuToggle.addEventListener('click', () => {
+            slideMenu.style.right = slideMenu.style.right === '0px' ? '-250px' : '0px';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img url="index.html" src ="logo.png" alt="Logo Monolix" class="logo">
+        </a>
+        <h1 url="index.html">MONOLIX</h1>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="slide-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="App.html">Monitoreo</a></li>
+                <li><a href="Resultado.html">Resultado</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div>
+            <h2>MONOLIX: Avaliação de impactos</h2>
+            <form id ="monitoring-form">
+                <div class="pergunta">
+                    <label class="quest" for = "quest-1" > 1. O local de disposição de residuos tem um sistema de coleta de gases?</label><br>
+                    <input type = "radio" id="quest-1-yes" name="quest-1" value="yes">
+                    <label for = "quest-1-yes">Sim</label>
+                    <input type = "radio" id="quest-1-no" name="quest-1" value="no">
+                    <label for = "quest-1-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-2"> 2. Os gases produzidos no local de disposição de residuos são queimados?</label><br>
+                    <input type = "radio" id="quest-2-yes" name="quest-2" value="yes">
+                    <label for = "quest-2-yes">Sim</label>
+                    <input type = "radio" id="quest-2-no" name="quest-2" value="no">
+                    <label for = "quest-2-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-3"> 3. É feito a colocação de coberturas diariamente?</label><br>
+                    <input type = "radio" id="quest-3-yes" name="quest-3" value="yes">
+                    <label for = "quest-3-yes">Sim</label>
+                    <input type = "radio" id="quest-3-no" name="quest-3" value="no">
+                    <label for = "quest-3-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-4"> 4. São depositados segundo o tipo de residuo?</label><br>
+                    <input type = "radio" id="quest-4-yes" name="quest-4" value="yes">
+                    <label for = "quest-4-yes">Sim</label>
+                    <input type = "radio" id="quest-4-no" name="quest-4" value="no">
+                    <label for = "quest-4-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-5"> 5. O local de disposição de residuos está localizado a mais de 200 m de corpos de água?</label><br>
+                    <input type = "radio" id="quest-5-yes" name="quest-5" value="yes">
+                    <label for = "quest-5-yes">Sim</label>
+                    <input type = "radio" id="quest-5-no" name="quest-5" value="no">
+                    <label for = "quest-5-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-6"> 6. O local de disposição de residuos apresenta um sistema de impermeabilização de base?</label><br>
+                    <input type = "radio" id="quest-6-yes" name="quest-6" value="yes">
+                    <label for = "quest-6-yes">Sim</label>
+                    <input type = "radio" id="quest-6-no" name="quest-6" value="no">
+                    <label for = "quest-6-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-7"> 7. O local de disposição de residuos apresenta um sistema de coleta e drenagem de lixiviados?</label><br>
+                    <input type = "radio" id="quest-7-yes" name="quest-7" value="yes">
+                    <label for = "quest-7-yes">Sim</label>
+                    <input type = "radio" id="quest-7-no" name="quest-7" value="no">
+                    <label for = "quest-7-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-8"> 8. Os lixiviados são transportados a uma lagoa de tratamento?</label><br>
+                    <input type = "radio" id="quest-8-yes" name="quest-8" value="yes">
+                    <label for = "quest-8-yes">Sim</label>
+                    <input type = "radio" id="quest-8-no" name="quest-8" value="no">
+                    <label for = "quest-8-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-9"> 9. A declive do terreno é inferior a 30%?</label><br>
+                    <input type = "radio" id="quest-9-yes" name="quest-9" value="yes">
+                    <label for = "quest-9-yes">Sim</label>
+                    <input type = "radio" id="quest-9-no" name="quest-9" value="no">
+                    <label for = "quest-9-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-10">10. O local de disposição de residuos apresenta um sistema de drenagem de águas pluviais?</label><br>
+                    <input type = "radio" id="quest-10-yes" name="quest-10" value="yes">
+                    <label for = "quest-10-yes">Sim</label>
+                    <input type = "radio" id="quest-10-no" name="quest-10" value="no">
+                    <label for = "quest-10-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-11">11. O local de disposição de residuos está localizado numa área que não esta sujeita a inundação?</label><br>
+                    <input type = "radio" id="quest-11-yes" name="quest-11" value="yes">
+                    <label for = "quest-11-yes">Sim</label>
+                    <input type = "radio" id="quest-11-no" name="quest-11" value="no">
+                    <label for = "quest-11-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-12">12. O local de disposição de residuos está localizado a uma distância superior a 500 m da população?</label><br>
+                    <input type = "radio" id="quest-12-yes" name="quest-12" value="yes">
+                    <label for = "quest-12-yes">Sim</label>
+                    <input type = "radio" id="quest-12-no" name="quest-12" value="no">
+                    <label for = "quest-12-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-13">13. A área de operação do local de disposição de residuos apresenta cerca circundante?</label><br>
+                    <input type = "radio" id="quest-13-yes" name="quest-13" value="yes">
+                    <label for = "quest-13-yes">Sim</label>
+                    <input type = "radio" id="quest-13-no" name="quest-13" value="no">
+                    <label for = "quest-13-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-14">14. Existe sinalização nas entradas do local de disposição de residuos?</label><br>
+                    <input type = "radio" id="quest-14-yes" name="quest-14" value="yes">
+                    <label for = "quest-14-yes">Sim</label>
+                    <input type = "radio" id="quest-14-no" name="quest-14" value="no">
+                    <label for = "quest-14-no">Não</label>
+                </div>
+                <div class="pergunta">
+                    <label class="quest" for = "quest-15">15. Existe cerca viva arbustiva ou arbórea no local de disposição de residuos?</label><br>
+                    <input type = "radio" id="quest-15-yes" name="quest-15" value="yes">
+                    <label for = "quest-15-yes">Sim</label>
+                    <input type = "radio" id="quest-15-no" name="quest-15" value="no">
+                    <label for = "quest-15-no">Não</label>
+                </div>
+            
+                <br></br>
+                <button type="submit">Avaliar</button>
+            </form>
+
+        </div>
+        
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var form = document.getElementById("monitoring-form")
+            form.addEventListener("submit" , function(event) {
+                event.preventDefault() 
+                var noCount = 0
+
+                var inputs = form.querySelectorAll('input[type="radio"]:checked')
+
+                var recomendacoes = []
+
+                inputs.forEach(function(input){
+                    if (input.value === "no") {
+                        noCount++
+
+                        var perguntaId = input.name
+                        switch (perguntaId){
+                            case "quest-1": 
+                                recomendacoes.push("O local de disposição de residuos precisa ter um sistema de coleta de gases.")
+                            break
+                            case "quest-2":
+                                recomendacoes.push("Os gases produzidos no local de disposição de residuos precisam ser queimados.")
+                            break
+                            case "quest-3":
+                                recomendacoes.push("Deve ser colocado, diariamente, coberturas no local de disposição de residuos.")
+                            break
+                            case "quest-4":
+                                recomendacoes.push("Deve ser aplicado uma coleta seletiva para o deposito de cada tipo em locais diferenciados.")
+                            break
+                            case "quest-5":
+                                recomendacoes.push("Procurar outro área para o deposito de residuos localizado a mais de 200 m de corpos de água.")
+                            break
+                            case "quest-6":
+                                recomendacoes.push("O local de disposição de residuos deve ter um sistema de impermeabilização de base.")
+                            break
+                            case "quest-7":
+                                recomendacoes.push("O local de disposição de residuos deve ter um sistema de coleta e drenagem de lixiviados.")
+                            break
+                            case "quest-8":
+                                recomendacoes.push("Os lixiviados devem ser transportados a uma lagoa de tratamento.")
+                            break
+                            case "quest-9":
+                                recomendacoes.push("Procurar outra área para o deposito de residuos com uma declive do terreno inferior a 30%.")
+                            break
+                            case "quest-10":
+                                recomendacoes.push("O local de disposição de residuos deve ter um sistema de drenagem de águas pluviais.")
+                            break
+                            case "quest-11":
+                                recomendacoes.push("Procurar outra área para o deposito de residuos que não esta sujeita a inundação.")
+                            break
+                            case "quest-12":
+                                recomendacoes.push("Procurar outra área para o deposito de residuos localizado a uma distância superior a 500 m da população.")
+                            break
+                            case "quest-13":
+                                recomendacoes.push("A área de operação do local de disposição de residuos deve ter uma cerca circundante.")
+                            break
+                            case "quest-14":
+                                recomendacoes.push("Deve ter sinalização nas entradas do local de disposição de residuos.")
+                            break
+                            case "quest-15":
+                                recomendacoes.push("A área de operação do local de disposição de residuos deve ter uma cerca viva arbustiva ou arbórea para evitar a alteração da paisagem.")
+                            break
+                            
+                        }                     
+                    }
+                })
+
+                var impacto
+
+                if (noCount >= 11.25) {
+                    impacto = "Impacto CRÍTICO"
+                } else if (noCount < 11.25 & noCount >=7.5) {
+                    impacto = "Impacto SEVERO"
+                } else if (noCount < 7.5 & noCount >=3.75) {
+                    impacto = "Impacto MODERADO"
+                } else if (noCount < 3.75) {
+                    impacto = "Impacto LEVE"
+                    
+                }
+
+                localStorage.setItem("noCount", noCount)
+                localStorage.setItem("impacto", impacto)
+
+                localStorage.setItem("recomendacoes", JSON.stringify(recomendacoes))
+
+                window.location.href = "Resultado.html"
+                
+            }) 
+            
+        })
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const slideMenu = document.getElementById('slide-menu');
+
+        menuToggle.addEventListener('click', () => {
+            slideMenu.style.right = slideMenu.style.right === '0px' ? '-250px' : '0px';
+        });
+        
+    </script>
+</body>
+</html>
